@@ -1,0 +1,12 @@
+<library>
+    <book id="b1">
+        <title>XML Basics</title>
+        <author>John Doe</author>
+        <price>29.99</price>
+    </book>
+    <book id="b2">
+        <title>XQuery Guide</title>
+        <author>Jane Smith</author>
+        <price>39.99</price>
+    </book>
+</library>

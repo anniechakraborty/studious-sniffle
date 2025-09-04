@@ -1,0 +1,1394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Shop xsi:noNamespaceSchemaLocation="xmlshop.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Books>
+		<Book ID="BOOK_ID_1">
+			<Title>Twilight</Title>
+			<Year>2007</Year>
+			<Price>5.80</Price>
+			<Distributor>COMP_ID_8</Distributor>
+			<Genre>Fantasy</Genre>
+			<Authors>
+				<Author>PERS_ID_19</Author>
+			</Authors>
+		</Book>
+		<Book ID="BOOK_ID_2">
+			<Title>New Moon</Title>
+			<Year>2007</Year>
+			<Price>7.00</Price>
+			<Distributor>COMP_ID_8</Distributor>
+			<Genre>Fantasy</Genre>
+			<Authors>
+				<Author>PERS_ID_19</Author>
+			</Authors>
+		</Book>
+		<Book ID="BOOK_ID_3">
+			<Title>Eclipse</Title>
+			<Year>2049</Year>
+			<Price>7.95</Price>
+			<Distributor>COMP_ID_8</Distributor>
+			<Genre>Fantasy</Genre>
+			<Authors>
+				<Author>PERS_ID_19</Author>
+			</Authors>
+		</Book>
+		<Book ID="BOOK_ID_4">
+			<Title>Breaking Dawn</Title>
+			<Year>2008</Year>
+			<Price>9.91</Price>
+			<Distributor>COMP_ID_8</Distributor>
+			<Genre>Fantasy</Genre>
+			<Authors>
+				<Author>PERS_ID_19</Author>
+			</Authors>
+		</Book>
+		<Book ID="BOOK_ID_5">
+			<Title>The Book Thief</Title>
+			<Year>2007</Year>
+			<Price>5.95</Price>
+			<Distributor>COMP_ID_9</Distributor>
+			<Genre>Fantasy</Genre>
+			<Authors>
+				<Author>PERS_ID_20</Author>
+			</Authors>
+		</Book>
+		<Book ID="BOOK_ID_6">
+			<Title>Angels and Demons</Title>
+			<Year>2003</Year>
+			<Price>8.60</Price>
+			<Distributor>COMP_ID_14</Distributor>
+			<Genre>Crime</Genre>
+			<Authors>
+				<Author>PERS_ID_40</Author>
+			</Authors>
+		</Book>
+		<Book ID="BOOK_ID_7">
+			<Title>Deception Point</Title>
+			<Year>2004</Year>
+			<Price>9.30</Price>
+			<Distributor>COMP_ID_14</Distributor>
+			<Genre>Crime</Genre>
+			<Authors>
+				<Author>PERS_ID_40</Author>
+			</Authors>
+		</Book>
+		<Book ID="BOOK_ID_8">
+			<Title>The Da Vinci Code</Title>
+			<Year>2004</Year>
+			<Price>8.95</Price>
+			<Distributor>COMP_ID_14</Distributor>
+			<Genre>Crime</Genre>
+			<Authors>
+				<Author>PERS_ID_40</Author>
+			</Authors>
+		</Book>
+		<Book ID="BOOK_ID_9">
+			<Title>Digital Fortress</Title>
+			<Year>2004</Year>
+			<Price>9.00</Price>
+			<Distributor>COMP_ID_14</Distributor>
+			<Genre>Crime</Genre>
+			<Authors>
+				<Author>PERS_ID_40</Author>
+			</Authors>
+		</Book>
+		<Book ID="BOOK_ID_10">
+			<Title>The Lost Symbol</Title>
+			<Year>2009</Year>
+			<Price>19.95</Price>
+			<Distributor>COMP_ID_14</Distributor>
+			<Genre>Crime</Genre>
+			<Authors>
+				<Author>PERS_ID_40</Author>
+			</Authors>
+		</Book>
+		<Book ID="BOOK_ID_11">
+			<Title>Die Welt ist nicht immer Freitag</Title>
+			<Year>2006</Year>
+			<Price>7.95</Price>
+			<Distributor>COMP_ID_17</Distributor>
+			<Genre>Humour</Genre>
+			<Authors>
+				<Author>PERS_ID_54</Author>
+            </Authors>
+        </Book>
+		<Book ID="BOOK_ID_12">
+			<Title>Gut gegen Nordwind</Title>
+			<Year>2008</Year>
+			<Price>7.95</Price>
+			<Distributor>COMP_ID_18</Distributor>
+			<Genre>Fiction</Genre>
+			<Authors>
+				<Author>PERS_ID_25</Author>
+            </Authors>
+        </Book>
+		<Book ID="BOOK_ID_13">
+			<Title>Denken Sie selbst! Sonst tun es andere für Sie</Title>
+			<Year>2008</Year>
+			<Price>9.95</Price>
+			<Distributor>COMP_ID_17</Distributor>
+			<Genre>Humour</Genre>
+			<Authors>
+				<Author>PERS_ID_56</Author>
+            </Authors>
+        </Book>
+		<Book ID="BOOK_ID_14">
+			<Title>Die Leber wächst mit ihren Aufgaben. Kurioses aus der Medizin</Title>
+			<Year>2008</Year>
+			<Price>9.95</Price>
+			<Distributor>COMP_ID_17</Distributor>
+			<Genre>Humour</Genre>
+			<Authors>
+				<Author>PERS_ID_57</Author>
+            </Authors>
+        </Book>
+		<Book ID="BOOK_ID_15">
+			<Title>Aufzeichnungen eines Schnitzeljägers: Mit Geocaching zurück zur Natur</Title>
+			<Year>2007</Year>
+			<Price>9.90</Price>
+			<Distributor>COMP_ID_17</Distributor>
+			<Genre>Humour</Genre>
+			<Authors>
+				<Author>PERS_ID_58</Author>
+            </Authors>
+        </Book>
+		<Book ID="BOOK_ID_16">
+			<Title>Smørrebrød in Napoli: Ein vergnüglicher Streifzug durch Europa</Title>
+			<Year>2009</Year>
+			<Price>8.95</Price>
+			<Distributor>COMP_ID_17</Distributor>
+			<Genre>Travel</Genre>
+			<Authors>
+				<Author>PERS_ID_59</Author>
+            </Authors>
+        </Book>
+		<Book ID="BOOK_ID_17">
+			<Title>Glück kommt selten allein...</Title>
+			<Year>2009</Year>
+			<Price>18.95</Price>
+			<Distributor>COMP_ID_17</Distributor>
+			<Genre>Humour</Genre>
+			<Authors>
+				<Author>PERS_ID_57</Author>
+            </Authors>
+        </Book>
+		<Book ID="BOOK_ID_18">
+			<Title>Gibt es intelligentes Leben?</Title>
+			<Year>2006</Year>
+			<Price>9.95</Price>
+			<Distributor>COMP_ID_17</Distributor>
+			<Genre>Humour</Genre>
+			<Authors>
+				<Author>PERS_ID_60</Author>
+            </Authors>
+        </Book>
+		<Book ID="BOOK_ID_19">
+			<Title>Wer's glaubt, wird selig</Title>
+			<Year>2007</Year>
+			<Price>9.90</Price>
+			<Distributor>COMP_ID_17</Distributor>
+			<Genre>Humour</Genre>
+			<Authors>
+				<Author>PERS_ID_60</Author>
+            </Authors>
+        </Book>
+		<Book ID="BOOK_ID_20">
+			<Title>Vollidiot</Title>
+			<Year>2006</Year>
+			<Price>7.95</Price>
+			<Distributor>COMP_ID_19</Distributor>
+			<Genre>Humour</Genre>
+			<Authors>
+				<Author>PERS_ID_61</Author>
+            </Authors>
+        </Book>
+		<Book ID="BOOK_ID_21">
+			<Title>Resturlaub</Title>
+			<Year>2007</Year>
+			<Price>7.95</Price>
+			<Distributor>COMP_ID_19</Distributor>
+			<Genre>Humour</Genre>
+			<Authors>
+				<Author>PERS_ID_61</Author>
+            </Authors>
+        </Book>
+		<Book ID="BOOK_ID_22">
+			<Title>Millionär: Der Roman</Title>
+			<Year>2008</Year>
+			<Price>8.95</Price>
+			<Distributor>COMP_ID_19</Distributor>
+			<Genre>Humour</Genre>
+			<Authors>
+				<Author>PERS_ID_61</Author>
+            </Authors>
+        </Book>
+	</Books>
+	<CDs>
+		<CD ID="CD_ID_1">
+			<Title>21st Century Breakdown</Title>
+			<Year>2009</Year>
+			<Price>13.95</Price>
+			<Distributor>COMP_ID_3</Distributor>
+			<Genre>Indie</Genre>
+			<Band>
+				<Name>Green Day</Name>
+				<Member>PERS_ID_1</Member>
+				<Member>PERS_ID_2</Member>
+				<Member>PERS_ID_3</Member>
+			</Band>
+		</CD>
+		<CD ID="CD_ID_2">
+			<Title>Mtv Unplugged in New York</Title>
+			<Year>2009</Year>
+			<Price>17.95</Price>
+			<Distributor>COMP_ID_4</Distributor>
+			<Genre>Rock</Genre>
+			<Band>
+				<Name>Sportfreunde Stiller</Name>
+				<Member>PERS_ID_4</Member>
+				<Member>PERS_ID_5</Member>
+				<Member>PERS_ID_6</Member>
+			</Band>
+		</CD>
+		<CD ID="CD_ID_3">
+			<Title>American Idiot</Title>
+			<Year>2004</Year>
+			<Price>8.95</Price>
+			<Distributor>COMP_ID_3</Distributor>
+			<Genre>Indie</Genre>
+			<Band>
+				<Name>Green Day</Name>
+				<Member>PERS_ID_1</Member>
+				<Member>PERS_ID_2</Member>
+				<Member>PERS_ID_3</Member>
+			</Band>
+		</CD>
+		<CD ID="CD_ID_4">
+			<Title>1</Title>
+			<Year>2000</Year>
+			<Price>11.95</Price>
+			<Distributor>COMP_ID_5</Distributor>
+			<Genre>Rock</Genre>
+			<Band>
+				<Name>the Beatles</Name>
+				<Member>PERS_ID_7</Member>
+				<Member>PERS_ID_8</Member>
+				<Member>PERS_ID_9</Member>
+				<Member>PERS_ID_10</Member>
+			</Band>
+		</CD>
+		<CD ID="CD_ID_5">
+			<Title>Stadtaffe</Title>
+			<Year>2009</Year>
+			<Price>13.97</Price>
+			<Distributor>COMP_ID_10</Distributor>
+			<Genre>Hip_Hop</Genre>
+			<Soloartist>PERS_ID_21</Soloartist>
+		</CD>
+		<CD ID="CD_ID_6">
+			<Title>Foot of the Mountain</Title>
+			<Year>2009</Year>
+			<Price>14.95</Price>
+			<Distributor>COMP_ID_11</Distributor>
+			<Genre>Pop</Genre>
+			<Band>
+				<Name>Placebo</Name>
+				<Member>PERS_ID_25</Member>
+			</Band>
+		</CD>
+		<CD ID="CD_ID_7">
+			<Title>Battle for the Sun</Title>
+			<Year>2009</Year>
+			<Price>13.95</Price>
+			<Distributor>COMP_ID_12</Distributor>
+			<Genre>Rock</Genre>
+			<Band>
+				<Name>Placebo</Name>
+				<Member>PERS_ID_25</Member>
+				<Member>PERS_ID_26</Member>
+				<Member>PERS_ID_27</Member>
+			</Band>
+		</CD>
+		<CD ID="CD_ID_8">
+			<Title>Do or Die</Title>
+			<Year>2009</Year>
+			<Price>12.95</Price>
+			<Distributor>COMP_ID_11</Distributor>
+			<Genre>Rock</Genre>
+			<Band>
+				<Name>The Bosshoss</Name>
+				<Member>PERS_ID_28</Member>
+				<Member>PERS_ID_29</Member>
+				<Member>PERS_ID_30</Member>
+				<Member>PERS_ID_31</Member>
+				<Member>PERS_ID_32</Member>
+				<Member>PERS_ID_33</Member>
+				<Member>PERS_ID_34</Member>
+			</Band>
+		</CD>
+		<CD ID="CD_ID_9">
+			<Title>Next!</Title>
+			<Year>2005</Year>
+			<Price>18.95</Price>
+			<Distributor>COMP_ID_10</Distributor>
+			<Genre>Reggae</Genre>
+			<Band>
+				<Name>Seeed</Name>
+				<Member>PERS_ID_21</Member>
+				<Member>PERS_ID_35</Member>
+				<Member>PERS_ID_36</Member>
+			</Band>
+		</CD>
+		<CD ID="CD_ID_10">
+			<Title>Let It Roll: Songs Of George Harrison</Title>
+			<Year>2009</Year>
+			<Price>15.95</Price>
+			<Distributor>COMP_ID_6</Distributor>
+			<Genre>Rock</Genre>
+			<Soloartist>PERS_ID_9</Soloartist>
+		</CD>
+		<CD ID="CD_ID_11">
+			<Title>Jazz ist anders</Title>
+			<Year>2007</Year>
+			<Price>14.95</Price>
+			<Distributor>COMP_ID_11</Distributor>
+			<Genre>Rock</Genre>
+			<Band>
+				<Name>Die Ärzte</Name>
+				<Member>PERS_ID_37</Member>
+				<Member>PERS_ID_38</Member>
+				<Member>PERS_ID_39</Member>
+			</Band>
+		</CD>
+		<CD ID="CD_ID_12">
+			<Title>Unplugged - Rock'n'Roll Realschule</Title>
+			<Year>2002</Year>
+			<Price>17.95</Price>
+			<Distributor>COMP_ID_11</Distributor>
+			<Genre>Rock</Genre>
+			<Band>
+				<Name>Die Ärzte</Name>
+				<Member>PERS_ID_37</Member>
+				<Member>PERS_ID_38</Member>
+				<Member>PERS_ID_39</Member>
+			</Band>
+		</CD>
+		<CD ID="CD_ID_13">
+			<Title>Geräusch</Title>
+			<Year>2003</Year>
+			<Price>21.95</Price>
+			<Distributor>COMP_ID_11</Distributor>
+			<Genre>Rock</Genre>
+			<Band>
+				<Name>Die Ärzte</Name>
+				<Member>PERS_ID_37</Member>
+				<Member>PERS_ID_38</Member>
+				<Member>PERS_ID_39</Member>
+			</Band>
+		</CD>
+		<CD ID="CD_ID_14">
+			<Title>13</Title>
+			<Year>1995</Year>
+			<Price>18.95</Price>
+			<Distributor>COMP_ID_11</Distributor>
+			<Genre>Rock</Genre>
+			<Band>
+				<Name>Die Ärzte</Name>
+				<Member>PERS_ID_37</Member>
+				<Member>PERS_ID_38</Member>
+				<Member>PERS_ID_39</Member>
+			</Band>
+		</CD>
+		<CD ID="CD_ID_15">
+			<Title>Wir Wollen Nur Deine Seele</Title>
+			<Year>1999</Year>
+			<Price>22.95</Price>
+			<Distributor>COMP_ID_11</Distributor>
+			<Genre>Rock</Genre>
+			<Band>
+				<Name>Die Ärzte</Name>
+				<Member>PERS_ID_37</Member>
+				<Member>PERS_ID_38</Member>
+				<Member>PERS_ID_39</Member>
+			</Band>
+		</CD>
+		<CD ID="CD_ID_16">
+			<Title>Endlich Urlaub!</Title>
+			<Year>2001</Year>
+			<Price>14.45</Price>
+			<Distributor>COMP_ID_11</Distributor>
+			<Genre>Pop</Genre>
+			<Soloartist>PERS_ID_37</Soloartist>
+		</CD>
+		<CD ID="CD_ID_17">
+			<Title>Am Ende der Sonne</Title>
+			<Year>2005</Year>
+			<Price>14.45</Price>
+			<Distributor>COMP_ID_11</Distributor>
+			<Genre>Pop</Genre>
+			<Soloartist>PERS_ID_37</Soloartist>
+		</CD>
+		<CD ID="CD_ID_18">
+			<Title>Die Wahrheit übers Lügen</Title>
+			<Year>2008</Year>
+			<Price>16.95</Price>
+			<Distributor>COMP_ID_11</Distributor>
+			<Genre>Pop</Genre>
+			<Soloartist>PERS_ID_37</Soloartist>
+		</CD>
+		<CD ID="CD_ID_19">
+			<Title>Bingo</Title>
+			<Year>2006</Year>
+			<Price>14.45</Price>
+			<Distributor>COMP_ID_13</Distributor>
+			<Genre>Rock</Genre>
+			<Soloartist>PERS_ID_38</Soloartist>
+		</CD>
+		<CD ID="CD_ID_20">
+			<Title>System of a Down</Title>
+			<Year>1998</Year>
+			<Price>7.45</Price>
+			<Distributor>COMP_ID_15</Distributor>
+			<Genre>Metal</Genre>
+			<Band>
+				<Name>System of a Down</Name>
+				<Member>PERS_ID_41</Member>
+				<Member>PERS_ID_42</Member>
+				<Member>PERS_ID_43</Member>
+				<Member>PERS_ID_44</Member>
+			</Band>
+		</CD>
+		<CD ID="CD_ID_21">
+			<Title>Toxicity</Title>
+			<Year>2004</Year>
+			<Price>7.45</Price>
+			<Distributor>COMP_ID_15</Distributor>
+			<Genre>Metal</Genre>
+			<Band>
+				<Name>System of a Down</Name>
+				<Member>PERS_ID_41</Member>
+				<Member>PERS_ID_42</Member>
+				<Member>PERS_ID_43</Member>
+				<Member>PERS_ID_44</Member>
+			</Band>
+		</CD>
+		<CD ID="CD_ID_22">
+			<Title>Steal This Album!</Title>
+			<Year>2004</Year>
+			<Price>7.95</Price>
+			<Distributor>COMP_ID_15</Distributor>
+			<Genre>Metal</Genre>
+			<Band>
+				<Name>System of a Down</Name>
+				<Member>PERS_ID_41</Member>
+				<Member>PERS_ID_42</Member>
+				<Member>PERS_ID_43</Member>
+				<Member>PERS_ID_44</Member>
+			</Band>
+		</CD>
+		<CD ID="CD_ID_23">
+			<Title>Mezmerize</Title>
+			<Year>2005</Year>
+			<Price>7.95</Price>
+			<Distributor>COMP_ID_15</Distributor>
+			<Genre>Metal</Genre>
+			<Band>
+				<Name>System of a Down</Name>
+				<Member>PERS_ID_41</Member>
+				<Member>PERS_ID_42</Member>
+				<Member>PERS_ID_43</Member>
+				<Member>PERS_ID_44</Member>
+			</Band>
+		</CD>
+		<CD ID="CD_ID_24">
+			<Title>Hypnotize</Title>
+			<Year>2005</Year>
+			<Price>7.95</Price>
+			<Distributor>COMP_ID_15</Distributor>
+			<Genre>Metal</Genre>
+			<Band>
+				<Name>System of a Down</Name>
+				<Member>PERS_ID_41</Member>
+				<Member>PERS_ID_42</Member>
+				<Member>PERS_ID_43</Member>
+				<Member>PERS_ID_44</Member>
+			</Band>
+		</CD>
+		<CD ID="CD_ID_25">
+			<Title>Elect the Dead</Title>
+			<Year>2008</Year>
+			<Price>18.95</Price>
+			<Distributor>COMP_ID_10</Distributor>
+			<Genre>Metal</Genre>
+			<Soloartist>PERS_ID_41</Soloartist>
+		</CD>
+		<CD ID="CD_ID_26">
+			<Title>Scars on Broadway</Title>
+			<Year>2008</Year>
+			<Price>17.95</Price>
+			<Distributor>COMP_ID_11</Distributor>
+			<Genre>Metal</Genre>
+			<Band>
+				<Name>Scars on Broadway</Name>
+				<Member>PERS_ID_42</Member>
+				<Member>PERS_ID_44</Member>
+				<Member>PERS_ID_45</Member>
+				<Member>PERS_ID_46</Member>
+				<Member>PERS_ID_47</Member>
+			</Band>
+		</CD>
+	</CDs>
+	<DVDs>
+		<DVD ID="DVD_ID_1">
+			<Title>The Beatles - Help</Title>
+			<Year>1965</Year>
+			<Price>79.95</Price>
+			<Distributor>COMP_ID_6</Distributor>
+			<Genre>Comedy</Genre>
+			<RegionCode>2</RegionCode>
+			<Actors>
+				<Actor>PERS_ID_7</Actor>
+				<Actor>PERS_ID_8</Actor>
+				<Actor>PERS_ID_9</Actor>
+				<Actor>PERS_ID_10</Actor>
+			</Actors>
+			<Director>PERS_ID_11</Director>
+		</DVD>
+		<DVD ID="DVD_ID_2">
+			<Title>James Bond - Ein Quantum Trost</Title>
+			<Year>2008</Year>
+			<Price>14.95</Price>
+			<Distributor>COMP_ID_7</Distributor>
+			<Genre>Action</Genre>
+			<RegionCode>2</RegionCode>
+			<Actors>
+				<Actor>PERS_ID_12</Actor>
+				<Actor>PERS_ID_13</Actor>
+				<Actor>PERS_ID_14</Actor>
+			</Actors>
+			<Director>PERS_ID_15</Director>
+		</DVD>
+		<DVD ID="DVD_ID_3">
+			<Title>Gran Torino</Title>
+			<Year>2008</Year>
+			<Price>17.95</Price>
+			<Distributor>COMP_ID_1</Distributor>
+			<Genre>Drama</Genre>
+			<RegionCode>2</RegionCode>
+			<Actors>
+				<Actor>PERS_ID_16</Actor>
+				<Actor>PERS_ID_17</Actor>
+			</Actors>
+			<Director>PERS_ID_16</Director>
+		</DVD>
+		<DVD ID="DVD_ID_4">
+			<Title>Ein wahres Verbrechen</Title>
+			<Year>1999</Year>
+			<Price>10.95</Price>
+			<Distributor>COMP_ID_1</Distributor>
+			<Genre>Thriller</Genre>
+			<RegionCode>2</RegionCode>
+			<Actors>
+				<Actor>PERS_ID_16</Actor>
+				<Actor>PERS_ID_18</Actor>
+			</Actors>
+			<Director>PERS_ID_16</Director>
+		</DVD>
+		<DVD ID="DVD_ID_5">
+			<Title>Twilight</Title>
+			<Year>2009</Year>
+			<Price>14.95</Price>
+			<Distributor>COMP_ID_16</Distributor>
+			<Genre>Horror</Genre>
+			<RegionCode>2</RegionCode>
+			<Actors>
+				<Actor>PERS_ID_49</Actor>
+				<Actor>PERS_ID_50</Actor>
+				<Actor>PERS_ID_51</Actor>
+				<Actor>PERS_ID_52</Actor>
+				<Actor>PERS_ID_53</Actor>
+			</Actors>
+			<Director>PERS_ID_48</Director>
+		</DVD>
+	</DVDs>
+	<Persons>
+		<Person ID="PERS_ID_1">
+			<Surname>Armstrong</Surname>
+			<Forename>Billie Joe</Forename>
+			<Albums>
+				<Album>CD_ID_1</Album>
+				<Album>CD_ID_3</Album>
+			</Albums>
+		</Person>
+		<Person ID="PERS_ID_2">
+			<Surname>Wright</Surname>
+			<Forename>Frank Edwin</Forename>
+			<Albums>
+				<Album>CD_ID_1</Album>
+				<Album>CD_ID_3</Album>
+			</Albums>
+		</Person>
+		<Person ID="PERS_ID_3">
+			<Surname>Pritchard</Surname>
+			<Forename>Michael Ryan</Forename>
+			<Albums>
+				<Album>CD_ID_1</Album>
+				<Album>CD_ID_3</Album>
+			</Albums>
+		</Person>
+		<Person ID="PERS_ID_4">
+			<Surname>Brugger</Surname>
+			<Forename>Peter</Forename>
+			<Albums>
+				<Album>CD_ID_2</Album>
+			</Albums>
+		</Person>
+		<Person ID="PERS_ID_5">
+			<Surname>Weber</Surname>
+			<Forename>Florian</Forename>
+			<Albums>
+				<Album>CD_ID_2</Album>
+			</Albums>
+		</Person>
+		<Person ID="PERS_ID_6">
+			<Surname>Linhof</Surname>
+			<Forename>Rüdiger</Forename>
+			<Albums>
+				<Album>CD_ID_2</Album>
+			</Albums>
+		</Person>
+		<Person ID="PERS_ID_7">
+			<Surname>Lennon</Surname>
+			<Forename>John</Forename>
+			<Albums>
+				<Album>CD_ID_4</Album>
+			</Albums>
+			<Films>
+				<Film>DVD_ID_1</Film>
+			</Films>
+		</Person>
+		<Person ID="PERS_ID_8">
+			<Surname>McCartney</Surname>
+			<Forename>Paul</Forename>
+			<Albums>
+				<Album>CD_ID_4</Album>
+			</Albums>
+			<Films>
+				<Film>DVD_ID_1</Film>
+			</Films>
+		</Person>
+		<Person ID="PERS_ID_9">
+			<Surname>Harrison</Surname>
+			<Forename>George</Forename>
+			<Albums>
+				<Album>CD_ID_4</Album>
+				<Album>CD_ID_10</Album>
+			</Albums>
+			<Films>
+				<Film>DVD_ID_1</Film>
+			</Films>
+		</Person>
+		<Person ID="PERS_ID_10">
+			<Surname>Starr</Surname>
+			<Forename>Ringo</Forename>
+			<Albums>
+				<Album>CD_ID_4</Album>
+			</Albums>
+			<Films>
+				<Film>DVD_ID_1</Film>
+			</Films>
+		</Person>
+		<Person ID="PERS_ID_11">
+			<Surname>Lester</Surname>
+			<Forename>Richard</Forename>
+			<Films>
+				<Film>DVD_ID_1</Film>
+			</Films>
+		</Person>
+		<Person ID="PERS_ID_12">
+			<Surname>Craig</Surname>
+			<Forename>Daniel</Forename>
+			<Films>
+				<Film>DVD_ID_2</Film>
+			</Films>
+		</Person>
+		<Person ID="PERS_ID_13">
+			<Surname>Kurylenko</Surname>
+			<Forename>Olga</Forename>
+			<Films>
+				<Film>DVD_ID_2</Film>
+			</Films>
+		</Person>
+		<Person ID="PERS_ID_14">
+			<Surname>Amalric</Surname>
+			<Forename>Mathieu</Forename>
+			<Films>
+				<Film>DVD_ID_2</Film>
+			</Films>
+		</Person>
+		<Person ID="PERS_ID_15">
+			<Surname>Forster</Surname>
+			<Forename>Marc</Forename>
+			<Films>
+				<Film>DVD_ID_2</Film>
+			</Films>
+		</Person>
+		<Person ID="PERS_ID_16">
+			<Surname>Eastwood</Surname>
+			<Forename>Clint</Forename>
+			<Films>
+				<Film>DVD_ID_3</Film>
+				<Film>DVD_ID_4</Film>
+			</Films>
+		</Person>
+		<Person ID="PERS_ID_17">
+			<Surname>Hardrict</Surname>
+			<Forename>Cory</Forename>
+			<Films>
+				<Film>DVD_ID_3</Film>
+			</Films>
+		</Person>
+		<Person ID="PERS_ID_18">
+			<Surname>Washington</Surname>
+			<Forename>Isaiah</Forename>
+			<Films>
+				<Film>DVD_ID_4</Film>
+			</Films>
+		</Person>
+		<Person ID="PERS_ID_19">
+			<Surname>Meyer</Surname>
+			<Forename>Stephenie</Forename>
+			<Books>
+				<Book>BOOK_ID_1</Book>
+				<Book>BOOK_ID_2</Book>
+				<Book>BOOK_ID_3</Book>
+				<Book>BOOK_ID_4</Book>
+			</Books>
+		</Person>
+		<Person ID="PERS_ID_20">
+			<Surname>Zusak</Surname>
+			<Forename>Markus</Forename>
+			<Books>
+				<Book>BOOK_ID_5</Book>
+			</Books>
+		</Person>
+		<Person ID="PERS_ID_21">
+			<Surname>Fox</Surname>
+			<Forename>Peter</Forename>
+			<Albums>
+				<Album>CD_ID_5</Album>
+				<Album>CD_ID_9</Album>
+			</Albums>
+		</Person>
+		<Person ID="PERS_ID_22">
+			<Surname>Harket</Surname>
+			<Forename>Morten</Forename>
+			<Albums>
+				<Album>CD_ID_6</Album>
+			</Albums>
+		</Person>
+		<Person ID="PERS_ID_23">
+			<Surname>Waaktaar-Savoy</Surname>
+			<Forename>Pål</Forename>
+			<Albums>
+				<Album>CD_ID_6</Album>
+			</Albums>
+		</Person>
+		<Person ID="PERS_ID_24">
+			<Surname>Furuholmen</Surname>
+			<Forename>Magne</Forename>
+			<Albums>
+				<Album>CD_ID_6</Album>
+			</Albums>
+		</Person>
+		<Person ID="PERS_ID_25">
+			<Surname>Molko</Surname>
+			<Forename>Brian</Forename>
+			<Albums>
+				<Album>CD_ID_7</Album>
+			</Albums>
+		</Person>
+		<Person ID="PERS_ID_26">
+			<Surname>Olsdal</Surname>
+			<Forename>Stefan</Forename>
+			<Albums>
+				<Album>CD_ID_7</Album>
+			</Albums>
+		</Person>
+		<Person ID="PERS_ID_27">
+			<Surname>Forrest</Surname>
+			<Forename>Steve</Forename>
+			<Albums>
+				<Album>CD_ID_7</Album>
+			</Albums>
+		</Person>
+		<Person ID="PERS_ID_28">
+			<Surname>Völkel</Surname>
+			<Forename>Alec</Forename>
+			<Albums>
+				<Album>CD_ID_8</Album>
+			</Albums>
+		</Person>
+		<Person ID="PERS_ID_29">
+			<Surname>Vollmer</Surname>
+			<Forename>Sascha</Forename>
+			<Albums>
+				<Album>CD_ID_8</Album>
+			</Albums>
+		</Person>
+		<Person ID="PERS_ID_30">
+			<Surname>Freyberg</Surname>
+			<Forename>Ansgar</Forename>
+			<Albums>
+				<Album>CD_ID_8</Album>
+			</Albums>
+		</Person>
+		<Person ID="PERS_ID_31">
+			<Surname>Arison</Surname>
+			<Forename>Malcolm</Forename>
+			<Albums>
+				<Album>CD_ID_8</Album>
+			</Albums>
+		</Person>
+		<Person ID="PERS_ID_32">
+			<Surname>Neumann</Surname>
+			<Forename>André</Forename>
+			<Albums>
+				<Album>CD_ID_8</Album>
+			</Albums>
+		</Person>
+		<Person ID="PERS_ID_33">
+			<Surname>Buehler</Surname>
+			<Forename>Stefan</Forename>
+			<Albums>
+				<Album>CD_ID_8</Album>
+			</Albums>
+		</Person>
+		<Person ID="PERS_ID_34">
+			<Surname>Fischer</Surname>
+			<Forename>Tobias</Forename>
+			<Albums>
+				<Album>CD_ID_8</Album>
+			</Albums>
+		</Person>
+		<Person ID="PERS_ID_35">
+			<Surname>Nabé</Surname>
+			<Forename>Demba</Forename>
+			<Albums>
+				<Album>CD_ID_9</Album>
+			</Albums>
+		</Person>
+		<Person ID="PERS_ID_36">
+			<Surname>Dellé</Surname>
+			<Forename>Frank A.</Forename>
+			<Albums>
+				<Album>CD_ID_9</Album>
+			</Albums>
+		</Person>
+		<Person ID="PERS_ID_37">
+			<Surname>Urlaub</Surname>
+			<Forename>Farin</Forename>
+			<Albums>
+				<Album>CD_ID_11</Album>
+				<Album>CD_ID_12</Album>
+				<Album>CD_ID_13</Album>
+				<Album>CD_ID_14</Album>
+				<Album>CD_ID_15</Album>
+				<Album>CD_ID_16</Album>
+				<Album>CD_ID_17</Album>
+				<Album>CD_ID_18</Album>
+			</Albums>
+		</Person>
+		<Person ID="PERS_ID_38">
+			<Surname>Felsenheimer</Surname>
+			<Forename>Bela B.</Forename>
+			<Albums>
+				<Album>CD_ID_11</Album>
+				<Album>CD_ID_12</Album>
+				<Album>CD_ID_13</Album>
+				<Album>CD_ID_14</Album>
+				<Album>CD_ID_15</Album>
+				<Album>CD_ID_19</Album>
+			</Albums>
+		</Person>
+		<Person ID="PERS_ID_39">
+			<Surname>Espindola</Surname>
+			<Forename>Rodrigo Andrés González</Forename>
+			<Albums>
+				<Album>CD_ID_11</Album>
+				<Album>CD_ID_12</Album>
+				<Album>CD_ID_13</Album>
+				<Album>CD_ID_14</Album>
+				<Album>CD_ID_15</Album>
+			</Albums>
+		</Person>
+		<Person ID="PERS_ID_40">
+			<Surname>Brown</Surname>
+			<Forename>Dan</Forename>
+			<Books>
+				<Book>BOOK_ID_6</Book>
+				<Book>BOOK_ID_7</Book>
+				<Book>BOOK_ID_8</Book>
+				<Book>BOOK_ID_9</Book>
+				<Book>BOOK_ID_10</Book>
+			</Books>
+		</Person>
+		<Person ID="PERS_ID_41">
+			<Surname>Tankian</Surname>
+			<Forename>Serj</Forename>
+			<Albums>
+				<Album>CD_ID_20</Album>
+				<Album>CD_ID_21</Album>
+				<Album>CD_ID_22</Album>
+				<Album>CD_ID_23</Album>
+				<Album>CD_ID_24</Album>
+				<Album>CD_ID_25</Album>
+			</Albums>
+		</Person>
+		<Person ID="PERS_ID_42">
+			<Surname>Malakian</Surname>
+			<Forename>Daron</Forename>
+			<Albums>
+				<Album>CD_ID_20</Album>
+				<Album>CD_ID_21</Album>
+				<Album>CD_ID_22</Album>
+				<Album>CD_ID_23</Album>
+				<Album>CD_ID_24</Album>
+				<Album>CD_ID_26</Album>
+			</Albums>
+		</Person>
+		<Person ID="PERS_ID_43">
+			<Surname>Odadjian</Surname>
+			<Forename>Shavarsh</Forename>
+			<Albums>
+				<Album>CD_ID_20</Album>
+				<Album>CD_ID_21</Album>
+				<Album>CD_ID_22</Album>
+				<Album>CD_ID_23</Album>
+				<Album>CD_ID_24</Album>
+			</Albums>
+		</Person>
+		<Person ID="PERS_ID_44">
+			<Surname>Dolmayan</Surname>
+			<Forename>John</Forename>
+			<Albums>
+				<Album>CD_ID_20</Album>
+				<Album>CD_ID_21</Album>
+				<Album>CD_ID_22</Album>
+				<Album>CD_ID_23</Album>
+				<Album>CD_ID_24</Album>
+				<Album>CD_ID_26</Album>
+			</Albums>
+		</Person>
+		<Person ID="PERS_ID_45">
+			<Surname>Perez</Surname>
+			<Forename>Franky</Forename>
+			<Albums>
+				<Album>CD_ID_26</Album>
+			</Albums>
+		</Person>
+		<Person ID="PERS_ID_46">
+			<Surname>Shamoun</Surname>
+			<Forename>Danny</Forename>
+			<Albums>
+				<Album>CD_ID_26</Album>
+			</Albums>
+		</Person>
+		<Person ID="PERS_ID_47">
+			<Surname>Cifarelli</Surname>
+			<Forename>Dominic</Forename>
+			<Albums>
+				<Album>CD_ID_26</Album>
+			</Albums>
+		</Person>
+		<Person ID="PERS_ID_48">
+			<Surname>Hardwicke</Surname>
+			<Forename>Catherine</Forename>
+			<Films>
+				<Film>DVD_ID_5</Film>
+			</Films>
+		</Person>
+		<Person ID="PERS_ID_49">
+			<Surname>Stewart</Surname>
+			<Forename>Kristen</Forename>
+			<Films>
+				<Film>DVD_ID_5</Film>
+			</Films>
+		</Person>
+		<Person ID="PERS_ID_50">
+			<Surname>Pattinson</Surname>
+			<Forename>Robert</Forename>
+			<Films>
+				<Film>DVD_ID_5</Film>
+			</Films>
+		</Person>
+		<Person ID="PERS_ID_51">
+			<Surname>Lautner</Surname>
+			<Forename>Taylor</Forename>
+			<Films>
+				<Film>DVD_ID_5</Film>
+			</Films>
+		</Person>
+		<Person ID="PERS_ID_52">
+			<Surname>Welch</Surname>
+			<Forename>Michael</Forename>
+			<Films>
+				<Film>DVD_ID_5</Film>
+			</Films>
+		</Person>
+		<Person ID="PERS_ID_53">
+			<Surname>Chon</Surname>
+			<Forename>Justin</Forename>
+			<Films>
+				<Film>DVD_ID_5</Film>
+			</Films>
+		</Person>
+		<Person ID="PERS_ID_54">
+			<Surname>Evers</Surname>
+			<Forename>Horst</Forename>
+			<Books>
+				<Book>BOOK_ID_11</Book>
+			</Books>
+		</Person>
+		<Person ID="PERS_ID_55">
+			<Surname>Glattauer</Surname>
+			<Forename>Daniel</Forename>
+			<Books>
+				<Book>BOOK_ID_12</Book>
+			</Books>
+		</Person>
+		<Person ID="PERS_ID_56">
+			<Surname>Ebert</Surname>
+			<Forename>Vince</Forename>
+			<Books>
+				<Book>BOOK_ID_13</Book>
+			</Books>
+		</Person>
+		<Person ID="PERS_ID_57">
+			<Surname>von Hirschhausen</Surname>
+			<Forename>Eckart</Forename>
+			<Books>
+				<Book>BOOK_ID_14</Book>
+				<Book>BOOK_ID_17</Book>
+			</Books>
+		</Person>
+		<Person ID="PERS_ID_58">
+			<Surname>Hoëcker</Surname>
+			<Forename>Bernhard</Forename>
+			<Books>
+				<Book>BOOK_ID_15</Book>
+			</Books>
+		</Person>
+		<Person ID="PERS_ID_59">
+			<Surname>Schnoy</Surname>
+			<Forename>Sebastian</Forename>
+			<Books>
+				<Book>BOOK_ID_16</Book>
+			</Books>
+		</Person>
+		<Person ID="PERS_ID_60">
+			<Surname>Nuhr</Surname>
+			<Forename>Dieter</Forename>
+			<Books>
+				<Book>BOOK_ID_18</Book>
+				<Book>BOOK_ID_19</Book>
+			</Books>
+		</Person>
+		<Person ID="PERS_ID_61">
+			<Surname>Jaud</Surname>
+			<Forename>Tommy</Forename>
+			<Books>
+				<Book>BOOK_ID_20</Book>
+				<Book>BOOK_ID_21</Book>
+				<Book>BOOK_ID_22</Book>
+			</Books>
+		</Person>
+	</Persons>
+	<Companies>
+		<Company ID="COMP_ID_1">
+			<Name>Warner Home Video</Name>
+			<USAddress>
+				<Street>4000 Warner Boulevard</Street>
+				<City>Burbank</City>
+				<State>CA</State>
+				<Zip>91522</Zip>
+			</USAddress>
+			<Products>
+				<Books>
+					<Book>BOOK_ID_1</Book>
+				</Books>
+				<Films>
+					<Film>DVD_ID_3</Film>
+					<Film>DVD_ID_4</Film>
+				</Films>
+			</Products>
+		</Company>
+		<Company ID="COMP_ID_2">
+			<Name>Warner Home Video Germany</Name>
+			<GermanAddress>
+				<Street>Humboldtstraße 62</Street>
+				<City>Hamburg</City>
+				<Postcode>22083</Postcode>
+			</GermanAddress>
+		</Company>
+		<Company ID="COMP_ID_3">
+			<Name>Reprise Records</Name>
+			<USAddress>
+				<Street>3300 Warner Boulevard</Street>
+				<City>Burbank</City>
+				<State>CA</State>
+				<Zip>91505</Zip>
+			</USAddress>
+			<Products>
+				<Albums>
+					<Album>CD_ID_1</Album>
+					<Album>CD_ID_3</Album>
+				</Albums>
+			</Products>
+		</Company>
+		<Company ID="COMP_ID_4">
+			<Name>Vertigo Be</Name>
+			<GermanAddress>
+				<Street>Stralauer Allee 1</Street>
+				<City>Berlin</City>
+				<Postcode>10245</Postcode>
+			</GermanAddress>
+			<Products>
+				<Albums>
+					<Album>CD_ID_2</Album>
+				</Albums>
+			</Products>
+		</Company>
+		<Company ID="COMP_ID_5">
+			<Name>Apple</Name>
+			<USAddress>
+				<Street>1 Infinite Loop</Street>
+				<City>Cupertino</City>
+				<State>CA</State>
+				<Zip>95014</Zip>
+			</USAddress>
+			<Products>
+				<Albums>
+					<Album>CD_ID_4</Album>
+				</Albums>
+			</Products>
+		</Company>
+		<Company ID="COMP_ID_6">
+			<Name>EMI Music Germany GmbH und Co. KG</Name>
+			<GermanAddress>
+				<Street>Im MediaPark 8a</Street>
+				<City>Köln</City>
+				<Postcode>50670</Postcode>
+			</GermanAddress>
+			<Products>
+				<Albums>
+					<Album>CD_ID_10</Album>
+				</Albums>
+				<Films>
+					<Film>DVD_ID_1</Film>
+				</Films>
+			</Products>
+		</Company>
+		<Company ID="COMP_ID_7">
+			<Name>MGM Home Entertainment (Deutschland) GmbH</Name>
+			<GermanAddress>
+				<Street>Hanauer Landstraße 135 -137</Street>
+				<City>Frankfurt</City>
+				<Postcode>60314</Postcode>
+			</GermanAddress>
+			<Products>
+				<Films>
+					<Film>DVD_ID_2</Film>
+				</Films>
+			</Products>
+		</Company>
+		<Company ID="COMP_ID_8">
+			<Name>Little, Brown Book Group</Name>
+			<UKAddress>
+				<Street>100 Victoria Embankment</Street>
+				<City>London</City>
+				<Postcode>EC4 1DY</Postcode>
+			</UKAddress>
+			<Products>
+				<Books>
+					<Book>BOOK_ID_1</Book>
+					<Book>BOOK_ID_2</Book>
+					<Book>BOOK_ID_3</Book>
+					<Book>BOOK_ID_4</Book>
+				</Books>
+			</Products>
+		</Company>
+		<Company ID="COMP_ID_9">
+			<Name>Corgi</Name>
+			<UKAddress>
+				<Street>20 Vauxhall Bridge Road</Street>
+				<City>London</City>
+				<Postcode>SW1 2SA</Postcode>
+			</UKAddress>
+			<Products>
+				<Books>
+					<Book>BOOK_ID_5</Book>
+				</Books>
+			</Products>
+		</Company>
+		<Company ID="COMP_ID_10">
+			<Name>Warner Music Group Germany Holding GmbH</Name>
+			<GermanAddress>
+				<Street>Alter Wandrahm 14</Street>
+				<City>Hamburg</City>
+				<Postcode>20457</Postcode>
+			</GermanAddress>
+			<Products>
+				<Albums>
+					<Album>CD_ID_5</Album>
+					<Album>CD_ID_9</Album>
+					<Album>CD_ID_25</Album>
+				</Albums>
+			</Products>
+		</Company>
+		<Company ID="COMP_ID_11">
+			<Name>Universal Music Entertainment GmbH</Name>
+			<GermanAddress>
+				<Street>Stralauer Allee 1</Street>
+				<City>Berlin</City>
+				<Postcode>10245</Postcode>
+			</GermanAddress>
+			<Products>
+				<Albums>
+					<Album>CD_ID_6</Album>
+					<Album>CD_ID_8</Album>
+					<Album>CD_ID_11</Album>
+					<Album>CD_ID_12</Album>
+					<Album>CD_ID_13</Album>
+					<Album>CD_ID_14</Album>
+					<Album>CD_ID_15</Album>
+					<Album>CD_ID_16</Album>
+					<Album>CD_ID_17</Album>
+					<Album>CD_ID_18</Album>
+					<Album>CD_ID_26</Album>
+				</Albums>
+			</Products>
+		</Company>
+		<Company ID="COMP_ID_12">
+			<Name>Rough Trade Records</Name>
+			<UKAddress>
+				<Street>66 Golborne Road</Street>
+				<City>London</City>
+				<Postcode>W1 5PS</Postcode>
+			</UKAddress>
+			<Products>
+				<Albums>
+					<Album>CD_ID_7</Album>
+				</Albums>
+			</Products>
+		</Company>
+		<Company ID="COMP_ID_13">
+			<Name>bpx 1992</Name>
+			<GermanAddress>
+				<Street>Schlegelstraße 26b</Street>
+				<City>Berlin</City>
+				<Postcode>10115</Postcode>
+			</GermanAddress>
+			<Products>
+				<Albums>
+					<Album>CD_ID_19</Album>
+				</Albums>
+			</Products>
+		</Company>
+		<Company ID="COMP_ID_14">
+			<Name>Random House</Name>
+			<UKAddress>
+				<Street>20 Vauxhall Bridge Road</Street>
+				<City>London</City>
+				<Postcode>SW1 2SA</Postcode>
+			</UKAddress>
+			<Products>
+				<Books>
+					<Book>BOOK_ID_6</Book>
+					<Book>BOOK_ID_7</Book>
+					<Book>BOOK_ID_8</Book>
+					<Book>BOOK_ID_9</Book>
+					<Book>BOOK_ID_10</Book>
+				</Books>
+			</Products>
+		</Company>
+		<Company  ID="COMP_ID_15">
+			<Name>Sony Music Entertainment</Name>
+			<USAddress>
+				<Street>555 Madison Ave, 10th Fl</Street>
+				<City>New York</City>
+				<State>NY</State>
+				<Zip>10022-3211</Zip>
+			</USAddress>
+			<Products>
+				<Albums>
+					<Album>CD_ID_20</Album>
+					<Album>CD_ID_21</Album>
+					<Album>CD_ID_22</Album>
+					<Album>CD_ID_23</Album>
+					<Album>CD_ID_24</Album>
+				</Albums>
+			</Products>
+		</Company>
+		<Company  ID="COMP_ID_16">
+			<Name>Concorde Home Entertainment GmbH</Name>
+			<GermanAddress>
+				<Street>Rosenheimer Straße 143b</Street>
+				<City>München</City>
+				<Postcode>81671</Postcode>
+			</GermanAddress>
+			<Products>
+				<Films>
+					<Film>DVD_ID_5</Film>
+				</Films>
+			</Products>
+		</Company>
+		<Company ID="COMP_ID_17">
+			<Name>Rowohlt Verlag GmbH</Name>
+			<GermanAddress>
+				<Street>Hamburger Straße 17</Street>
+				<City>Reinbek</City>
+				<Postcode>21465</Postcode>
+            </GermanAddress>
+			<Products>
+				<Books>
+					<Book>BOOK_ID_11</Book>
+					<Book>BOOK_ID_13</Book>
+					<Book>BOOK_ID_14</Book>
+					<Book>BOOK_ID_15</Book>
+					<Book>BOOK_ID_16</Book>
+					<Book>BOOK_ID_17</Book>
+					<Book>BOOK_ID_18</Book>
+					<Book>BOOK_ID_19</Book>
+                </Books>
+            </Products>
+        </Company>
+		<Company ID="COMP_ID_18">
+			<Name>Verlagsgruppe RANDOM HOUSE GmbH</Name>
+			<GermanAddress>
+				<Street>Neumarkter Straße 28</Street>
+				<City>München</City>
+				<Postcode>81673</Postcode>
+            </GermanAddress>
+			<Products>
+				<Books>
+					<Book>BOOK_ID_12</Book>
+                </Books>
+            </Products>
+        </Company>
+		<Company ID="COMP_ID_19">
+			<Name>S. Fischer Verlag GmbH</Name>
+			<GermanAddress>
+				<Street>Hedderichstraße 114</Street>
+				<City>Frankfurt am Main</City>
+				<Postcode>60596</Postcode>
+            </GermanAddress>
+			<Products>
+				<Books>
+					<Book>BOOK_ID_20</Book>
+					<Book>BOOK_ID_21</Book>
+					<Book>BOOK_ID_22</Book>
+                </Books>
+            </Products>
+        </Company>
+	</Companies>
+</Shop>

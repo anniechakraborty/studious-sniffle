@@ -1,0 +1,147 @@
+<onlineshops>
+    <onlineshop name="MyClothingShop">
+        <products>
+            <product productNumber="36485678">
+                <name>women shirt blue</name>
+                <type>t-shirt</type>
+                <brand>prada</brand>
+                <price>90</price>
+                <instock>250</instock>
+            </product>
+            <product productNumber="67476997">
+                <name>blue jeans</name>
+                <type>jeans</type>
+                <brand>levis</brand>
+                <price>120</price>
+                <instock>32</instock>
+            </product>
+            <product productNumber="98542311">
+                <name>red dress</name>
+                <type>dress</type>
+                <brand>gucci</brand>
+                <price>350</price>
+                <instock>15</instock>
+            </product>
+            <product productNumber="27364822">
+                <name>black leather jacket</name>
+                <type>jacket</type>
+                <brand>zara</brand>
+                <price>200</price>
+                <instock>50</instock>
+            </product>
+        </products>
+
+        <orders>
+            <order orderNumber="0">
+                <customernumber>24</customernumber>
+                <orderdate>08/13/2017</orderdate>
+                <shippingaddress>
+                    <name>john wayne</name>
+                    <streetandnumber>main street 1</streetandnumber>
+                    <zipcode>73669</zipcode>
+                </shippingaddress>
+                <orderstatus>in delivery</orderstatus>
+                <orderedproducts>
+                    <product>
+                        <productnumber>36485678</productnumber>
+                        <amount>2</amount>
+                    </product>
+                </orderedproducts>
+            </order>
+
+            <order orderNumber="1">
+                <customernumber>42</customernumber>
+                <orderdate>08/17/2017</orderdate>
+                <shippingaddress>
+                    <name>bruce wayne</name>
+                    <streetandnumber>second street 2</streetandnumber>
+                    <zipcode>75807</zipcode>
+                </shippingaddress>
+                <orderstatus>waiting for shipment</orderstatus>
+                <orderedproducts>
+                    <product>
+                        <productnumber>67476997</productnumber>
+                        <amount>1</amount>
+                    </product>
+                </orderedproducts>
+            </order>
+
+            <order orderNumber="2">
+                <customernumber>58</customernumber>
+                <orderdate>09/02/2017</orderdate>
+                <shippingaddress>
+                    <name>clark kent</name>
+                    <streetandnumber>third street 5</streetandnumber>
+                    <zipcode>45322</zipcode>
+                </shippingaddress>
+                <orderstatus>delivered</orderstatus>
+                <orderedproducts>
+                    <product>
+                        <productnumber>98542311</productnumber>
+                        <amount>1</amount>
+                    </product>
+                    <product>
+                        <productnumber>36485678</productnumber>
+                        <amount>3</amount>
+                    </product>
+                </orderedproducts>
+            </order>
+            <order orderNumber="3">
+              <customernumber>42</customernumber>
+              <orderdate>08/17/2017</orderdate>
+              <shippingaddress>
+                  <name>bruce wayne</name>
+                  <streetandnumber>second street 2</streetandnumber>
+                  <zipcode>75807</zipcode>
+              </shippingaddress>
+              <orderstatus>waiting for shipment</orderstatus>
+              <orderedproducts>
+                  <product>
+                      <productnumber>36485678</productnumber>
+                      <amount>2</amount>
+                  </product>
+              </orderedproducts>
+          </order>
+        </orders>
+
+        <customers>
+            <customer customernumber="24">
+                <name>john wayne</name>
+                <dateofbirth>03/23/1967</dateofbirth>
+                <customersince>2015</customersince>
+                <trusted>true</trusted>
+            </customer>
+            <customer customernumber="42">
+                <name>bruce wayne</name>
+                <dateofbirth>12/13/1980</dateofbirth>
+                <customersince>1999</customersince>
+                <trusted>false</trusted>
+            </customer>
+            <customer customernumber="58">
+                <name>clark kent</name>
+                <dateofbirth>05/29/1975</dateofbirth>
+                <customersince>2001</customersince>
+                <trusted>true</trusted>
+            </customer>
+        </customers>
+    </onlineshop>
+
+    <onlineshop name="MyElectronicShop">
+        <products>
+            <product productNumber="88372901">
+                <name>smartphone x</name>
+                <type>phone</type>
+                <brand>apple</brand>
+                <price>999</price>
+                <instock>120</instock>
+            </product>
+            <product productNumber="34567290">
+                <name>gaming laptop</name>
+                <type>laptop</type>
+                <brand>asus</brand>
+                <price>1500</price>
+                <instock>25</instock>
+            </product>
+        </products>
+    </onlineshop>
+</onlineshops>

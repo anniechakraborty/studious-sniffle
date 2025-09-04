@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- Mit XMLSpy v2009 sp1 (http://www.altova.com) von Fox Mulder (FBI) bearbeitet -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="qualified">
+	<xs:complexType name="ProductType" abstract="true">
+		<xs:sequence>
+			<xs:element name="Title" type="xs:string"/>
+			<xs:element name="Year">
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="1950"/>
+						<xs:maxExclusive value="2050"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Price">
+				<xs:simpleType>
+					<xs:restriction base="xs:decimal">
+						<xs:minExclusive value="0.0"/>
+						<xs:totalDigits value="6"/>
+						<xs:fractionDigits value="2"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Distributor" type="xs:IDREF"/>
+		</xs:sequence>
+		<xs:attribute name="ID" type="xs:ID" use="required"/>
+	</xs:complexType>
+	<xs:complexType name="CDType" mixed="false">
+		<xs:complexContent mixed="false">
+			<xs:extension base="ProductType">
+				<xs:sequence>
+					<xs:element name="Genre" type="MusicGenre" default="None"/>
+					<xs:choice>
+						<xs:element name="Band" type="GroupType"/>
+						<xs:element name="Soloartist" type="xs:IDREF"/>
+					</xs:choice>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="GroupType">
+		<xs:sequence>
+			<xs:element name="Name" type="xs:string"/>
+			<xs:element name="Member" type="xs:IDREF" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="BookType" mixed="false">
+		<xs:complexContent mixed="false">
+			<xs:extension base="ProductType">
+				<xs:sequence>
+					<xs:element name="Genre" type="BookGenre" default="None"/>
+					<xs:element name="Authors">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="Author" type="xs:IDREF" maxOccurs="unbounded"/>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="Editors" minOccurs="0">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="Editor" type="xs:IDREF" maxOccurs="unbounded"/>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="DVDType" mixed="false">
+		<xs:complexContent mixed="false">
+			<xs:extension base="ProductType">
+				<xs:sequence>
+					<xs:element name="Genre" type="FilmGenre" default="None"/>
+					<xs:element name="RegionCode" default="2">
+						<xs:simpleType>
+							<xs:restriction base="xs:nonNegativeInteger">
+								<xs:minInclusive value="0"/>
+								<xs:maxInclusive value="6"/>
+								<xs:totalDigits value="1"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:element>
+					<xs:element name="Actors">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="Actor" type="xs:IDREF" maxOccurs="unbounded"/>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="Director" type="xs:IDREF"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="CompanyType">
+		<xs:sequence>
+			<xs:element name="Name" type="xs:string"/>
+			<xs:choice>
+				<xs:element name="Address" type="generalAddressType"/>
+				<xs:element name="GermanAddress" type="GermanAddressType"/>
+				<xs:element name="UKAddress" type="UKAddressType"/>
+				<xs:element name="USAddress" type="USAddressType"/>
+			</xs:choice>
+			<xs:element name="Products" minOccurs="0">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="Albums" minOccurs="0">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="Album" type="xs:IDREF" minOccurs="0" maxOccurs="unbounded"/>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="Books" minOccurs="0">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="Book" type="xs:IDREF" minOccurs="0" maxOccurs="unbounded"/>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="Films" minOccurs="0">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="Film" type="xs:IDREF" minOccurs="0" maxOccurs="unbounded"/>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+		<xs:attribute name="ID" type="xs:ID" use="required"/>
+	</xs:complexType>
+	<xs:complexType name="AddressType" abstract="true">
+		<xs:sequence>
+			<xs:element name="Street" type="xs:string"/>
+			<xs:element name="City" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="generalAddressType" mixed="false">
+		<xs:complexContent mixed="false">
+			<xs:extension base="AddressType">
+				<xs:sequence>
+					<xs:element name="Zip" type="xs:string"/>
+				</xs:sequence>
+				<xs:attribute name="Country" type="xs:NMTOKEN"/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="GermanAddressType" mixed="false">
+		<xs:complexContent mixed="false">
+			<xs:extension base="AddressType">
+				<xs:sequence>
+					<xs:element name="Postcode">
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:pattern value="[0-9]{5}"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:element>
+				</xs:sequence>
+				<xs:attribute name="Country" type="xs:NMTOKEN" fixed="DE"/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="UKAddressType" mixed="false">
+		<xs:complexContent mixed="false">
+			<xs:extension base="AddressType">
+				<xs:sequence>
+					<xs:element name="Postcode">
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:pattern value="[A-Z]{1,2}[1-9]{1,2} [1-9][A-Z]{2}"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:element>
+				</xs:sequence>
+				<xs:attribute name="Country" type="xs:NMTOKEN" fixed="UK"/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="USAddressType" mixed="false">
+		<xs:complexContent mixed="false">
+			<xs:extension base="AddressType">
+				<xs:sequence>
+					<xs:element name="State" type="USState"/>
+					<xs:element name="Zip">
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:pattern value="[0-9]{5}(-[0-9]{4})?"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:element>
+				</xs:sequence>
+				<xs:attribute name="Country" type="xs:NMTOKEN" fixed="US"/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:simpleType name="BookGenre">
+		<xs:restriction base="xs:NMTOKEN">
+			<xs:enumeration value="Architecture"/>
+			<xs:enumeration value="Art"/>
+			<xs:enumeration value="Astrology"/>
+			<xs:enumeration value="Biography"/>
+			<xs:enumeration value="Business"/>
+			<xs:enumeration value="Childrens"/>
+			<xs:enumeration value="Classics"/>
+			<xs:enumeration value="Computing"/>
+			<xs:enumeration value="Crafts"/>
+			<xs:enumeration value="Crime"/>
+			<xs:enumeration value="Drink"/>
+			<xs:enumeration value="Education"/>
+			<xs:enumeration value="Fantasy"/>
+			<xs:enumeration value="Fiction"/>
+			<xs:enumeration value="Film"/>
+			<xs:enumeration value="Food"/>
+			<xs:enumeration value="Games_Guides"/>
+			<xs:enumeration value="Garden"/>
+			<xs:enumeration value="Graphic_Novels"/>
+			<xs:enumeration value="Health"/>
+			<xs:enumeration value="History"/>
+			<xs:enumeration value="Hobbies"/>
+			<xs:enumeration value="Home"/>
+			<xs:enumeration value="Horror"/>
+			<xs:enumeration value="Humour"/>
+			<xs:enumeration value="Law"/>
+			<xs:enumeration value="Music"/>
+			<xs:enumeration value="Nature"/>
+			<xs:enumeration value="None"/>
+			<xs:enumeration value="Occult"/>
+			<xs:enumeration value="Personal_Development"/>
+			<xs:enumeration value="Poetry"/>
+			<xs:enumeration value="Politics"/>
+			<xs:enumeration value="Reference"/>
+			<xs:enumeration value="Science"/>
+			<xs:enumeration value="Sci-Fi"/>
+			<xs:enumeration value="Society"/>
+			<xs:enumeration value="Sports_Games"/>
+			<xs:enumeration value="Transport"/>
+			<xs:enumeration value="Travel"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="FilmGenre">
+		<xs:restriction base="xs:NMTOKEN">
+			<xs:enumeration value="Action"/>
+			<xs:enumeration value="Adventure"/>
+			<xs:enumeration value="Animation"/>
+			<xs:enumeration value="Anime"/>
+			<xs:enumeration value="Art_House"/>
+			<xs:enumeration value="Boxed_Sets"/>
+			<xs:enumeration value="Classics"/>
+			<xs:enumeration value="Comedy"/>
+			<xs:enumeration value="Cult_Movies"/>
+			<xs:enumeration value="Drama"/>
+			<xs:enumeration value="Horror"/>
+			<xs:enumeration value="Independent"/>
+			<xs:enumeration value="Kids_Family"/>
+			<xs:enumeration value="Martial_Arts"/>
+			<xs:enumeration value="Military"/>
+			<xs:enumeration value="Musicals"/>
+			<xs:enumeration value="None"/>
+			<xs:enumeration value="Romantic_Comedy"/>
+			<xs:enumeration value="Science_Fiction"/>
+			<xs:enumeration value="Special_Interest"/>
+			<xs:enumeration value="Sports_Fitness"/>
+			<xs:enumeration value="Television"/>
+			<xs:enumeration value="Thriller"/>
+			<xs:enumeration value="Westerns"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="MusicGenre">
+		<xs:restriction base="xs:NMTOKEN">
+			<xs:enumeration value="Blues"/>
+			<xs:enumeration value="Box_Sets"/>
+			<xs:enumeration value="Childrens"/>
+			<xs:enumeration value="Classical"/>
+			<xs:enumeration value="Compilations"/>
+			<xs:enumeration value="Country"/>
+			<xs:enumeration value="Dance"/>
+			<xs:enumeration value="Easy_Listening"/>
+			<xs:enumeration value="Folk"/>
+			<xs:enumeration value="Hip_Hop"/>
+			<xs:enumeration value="Indie"/>
+			<xs:enumeration value="Jazz"/>
+			<xs:enumeration value="Metal"/>
+			<xs:enumeration value="None"/>
+			<xs:enumeration value="Pop"/>
+			<xs:enumeration value="Rap"/>
+			<xs:enumeration value="Reggae"/>
+			<xs:enumeration value="RnB"/>
+			<xs:enumeration value="Rock"/>
+			<xs:enumeration value="Soul"/>
+			<xs:enumeration value="Soundtracks"/>
+			<xs:enumeration value="World_International"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="USState">
+		<xs:restriction base="xs:NMTOKEN">
+			<xs:enumeration value="AK"/>
+			<xs:enumeration value="AL"/>
+			<xs:enumeration value="AR"/>
+			<xs:enumeration value="AZ"/>
+			<xs:enumeration value="CA"/>
+			<xs:enumeration value="CO"/>
+			<xs:enumeration value="CT"/>
+			<xs:enumeration value="DE"/>
+			<xs:enumeration value="FL"/>
+			<xs:enumeration value="GA"/>
+			<xs:enumeration value="HI"/>
+			<xs:enumeration value="IA"/>
+			<xs:enumeration value="ID"/>
+			<xs:enumeration value="IL"/>
+			<xs:enumeration value="IN"/>
+			<xs:enumeration value="KS"/>
+			<xs:enumeration value="KY"/>
+			<xs:enumeration value="LA"/>
+			<xs:enumeration value="MA"/>
+			<xs:enumeration value="MD"/>
+			<xs:enumeration value="ME"/>
+			<xs:enumeration value="MI"/>
+			<xs:enumeration value="MN"/>
+			<xs:enumeration value="MO"/>
+			<xs:enumeration value="MS"/>
+			<xs:enumeration value="MT"/>
+			<xs:enumeration value="NC"/>
+			<xs:enumeration value="ND"/>
+			<xs:enumeration value="NE"/>
+			<xs:enumeration value="NH"/>
+			<xs:enumeration value="NJ"/>
+			<xs:enumeration value="NM"/>
+			<xs:enumeration value="NV"/>
+			<xs:enumeration value="NY"/>
+			<xs:enumeration value="OH"/>
+			<xs:enumeration value="OK"/>
+			<xs:enumeration value="OR"/>
+			<xs:enumeration value="PA"/>
+			<xs:enumeration value="RI"/>
+			<xs:enumeration value="SC"/>
+			<xs:enumeration value="SD"/>
+			<xs:enumeration value="TN"/>
+			<xs:enumeration value="TX"/>
+			<xs:enumeration value="UT"/>
+			<xs:enumeration value="VA"/>
+			<xs:enumeration value="VT"/>
+			<xs:enumeration value="WA"/>
+			<xs:enumeration value="WI"/>
+			<xs:enumeration value="WV"/>
+			<xs:enumeration value="WY"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="PersonType">
+		<xs:sequence>
+			<xs:element name="Surname"/>
+			<xs:element name="Forename" minOccurs="0"/>
+			<xs:element name="Albums" minOccurs="0">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="Album" type="xs:IDREF" minOccurs="0" maxOccurs="unbounded"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="Books" minOccurs="0">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="Book" type="xs:IDREF" minOccurs="0" maxOccurs="unbounded"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="Films" minOccurs="0">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="Film" type="xs:IDREF" minOccurs="0" maxOccurs="unbounded"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+		<xs:attribute name="ID" type="xs:ID" use="required"/>
+	</xs:complexType>
+	<xs:element name="Shop">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Books" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Book" type="BookType" minOccurs="0" maxOccurs="unbounded"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="CDs" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="CD" type="CDType" minOccurs="0" maxOccurs="unbounded"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="DVDs" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="DVD" type="DVDType" minOccurs="0" maxOccurs="unbounded"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Persons" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Person" type="PersonType" minOccurs="0" maxOccurs="unbounded"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Companies" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Company" type="CompanyType" minOccurs="0" maxOccurs="unbounded"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+		<xs:key name="CDKey">
+			<xs:selector xpath="./CDs/CD"/>
+			<xs:field xpath="@ID"/>
+		</xs:key>
+		<xs:key name="CompanyKey">
+			<xs:selector xpath="./Companies/Company"/>
+			<xs:field xpath="@ID"/>
+		</xs:key>
+		<xs:key name="BookKey">
+			<xs:selector xpath="./Books/Book"/>
+			<xs:field xpath="@ID"/>
+		</xs:key>
+		<xs:key name="DVDKey">
+			<xs:selector xpath="./DVDs/DVD"/>
+			<xs:field xpath="@ID"/>
+		</xs:key>
+		<xs:key name="PersonKey">
+			<xs:selector xpath="./Persons/Person"/>
+			<xs:field xpath="@ID"/>
+		</xs:key>
+		<xs:keyref name="ActorRef" refer="PersonKey">
+			<xs:selector xpath="./DVDs/DVD/Actors/Actor"/>
+			<xs:field xpath="."/>
+		</xs:keyref>
+		<xs:keyref name="AlbumRefCompany" refer="CDKey">
+			<xs:selector xpath="./Companies/Company/Products/Albums/Album"/>
+			<xs:field xpath="."/>
+		</xs:keyref>
+		<xs:keyref name="AlbumRefPerson" refer="CDKey">
+			<xs:selector xpath="./Persons/Person/Albums/Album"/>
+			<xs:field xpath="."/>
+		</xs:keyref>
+		<xs:keyref name="AuthorRef" refer="PersonKey">
+			<xs:selector xpath="./Books/Book/Authors/Author"/>
+			<xs:field xpath="."/>
+		</xs:keyref>
+		<xs:keyref name="EditorRef" refer="PersonKey">
+			<xs:selector xpath="./Books/Book/Editors/Editor"/>
+			<xs:field xpath="."/>
+		</xs:keyref>
+		<xs:keyref name="CDCompanyRef" refer="CompanyKey">
+			<xs:selector xpath="./CDs/CD"/>
+			<xs:field xpath="Distributor"/>
+		</xs:keyref>
+		<xs:keyref name="DVDCompanyRef" refer="CompanyKey">
+			<xs:selector xpath="./DVDs/DVD"/>
+			<xs:field xpath="Distributor"/>
+		</xs:keyref>
+		<xs:keyref name="DirectorRef" refer="PersonKey">
+			<xs:selector xpath="./DVDs/DVD"/>
+			<xs:field xpath="Director"/>
+		</xs:keyref>
+		<xs:keyref name="BookRefPerson" refer="BookKey">
+			<xs:selector xpath="./Persons/Person/Books/Book"/>
+			<xs:field xpath="."/>
+		</xs:keyref>
+		<xs:keyref name="FilmRefPerson" refer="DVDKey">
+			<xs:selector xpath="./Persons/Person/Films/Film"/>
+			<xs:field xpath="."/>
+		</xs:keyref>
+		<xs:keyref name="BookRefCompany" refer="BookKey">
+			<xs:selector xpath="./Companies/Company/Products/Books/Book"/>
+			<xs:field xpath="."/>
+		</xs:keyref>
+		<xs:keyref name="FilmRefCompany" refer="DVDKey">
+			<xs:selector xpath="./Companies/Company/Products/Films/Film"/>
+			<xs:field xpath="."/>
+		</xs:keyref>
+		<xs:keyref name="MemberRef" refer="PersonKey">
+			<xs:selector xpath="./CDs/CD/Band/Member"/>
+			<xs:field xpath="."/>
+		</xs:keyref>
+		<xs:keyref name="SoloartistRef" refer="PersonKey">
+			<xs:selector xpath="./CDs/CD"/>
+			<xs:field xpath="Soloartist"/>
+		</xs:keyref>
+	</xs:element>
+</xs:schema>
