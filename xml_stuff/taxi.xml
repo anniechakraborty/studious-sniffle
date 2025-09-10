@@ -1,0 +1,63 @@
+<taxicompanies>
+  <taxicompany name="besttaxi">
+    <taxis>
+      <taxi id="263">
+        <vehicletype>passengervehicle</vehicletype>
+        <brand>peugeot</brand>
+        <miles>94</miles>
+        <seats>4</seats>
+      </taxi>
+      <taxi id="264">
+        <vehicletype>transporter</vehicletype>
+        <brand>mercedes-benz</brand>
+        <miles>593</miles>
+        <seats>2</seats>
+      </taxi>
+    </taxis>
+
+    <trips>
+      <trip id="1">
+        <origin>mainstreet1</origin>
+        <destination>mainstreet3</destination>
+        <distance>5</distance>
+        <taxi>263</taxi>
+      </trip>
+      <trip id="5">
+        <origin>rome</origin>
+        <destination>milan</destination>
+        <distance>5</distance>
+        <taxi>264</taxi>
+      </trip>
+      <trip id="3">
+        <origin>vaihingen</origin>
+        <destination>stuttgart</destination>
+        <distance>5</distance>
+        <taxi>263</taxi>
+      </trip>
+    </trips>
+
+    <drivers>
+      <driver id="1">
+        <name>johndoe</name>
+        <dateofbirth>1980-01-01</dateofbirth>
+        <taxi>263</taxi>
+        <status>on-pickup</status>
+      </driver>
+      <driver id="4">
+        <name>alexdeer</name>
+        <dateofbirth>1964-04-30</dateofbirth>
+        <taxi>263</taxi>
+        <status>available</status>
+      </driver>
+      <driver id="59">
+        <name>johnkrasinski</name>
+        <dateofbirth>1974-03-06</dateofbirth>
+        <taxi>264</taxi>
+        <status>available</status>
+      </driver>
+      <!-- more drivers go here -->
+    </drivers>
+  </taxicompany>
+
+  <!-- more taxicompany elements go here -->
+</taxicompanies>
